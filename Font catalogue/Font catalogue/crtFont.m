@@ -10,4 +10,16 @@
 
 @implementation crtFont
 
+@synthesize fontName;
+@synthesize rating;
+@synthesize fontSizeForCell;
+
++ (id)fontWithNameRating:(NSString *)fontName rating:(NSNumber *)rating
+{
+  crtFont *newFont = [[self alloc] init];
+  [newFont setFontName:fontName];
+  [newFont setRating:rating];
+  return newFont;
+}
+
 @end

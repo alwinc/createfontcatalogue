@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface crtFont : NSObject
+@interface crtFont : NSObject {
+  NSString *fontName;
+  NSNumber *rating;
+  NSNumber *fontSizeForCell;
+}
 
+@property (nonatomic, copy) NSString *fontName;
+@property (nonatomic, retain) NSNumber *rating;
+@property (nonatomic, retain) NSNumber *fontSizeForCell;
+
+
++ (id)fontWithNameRating:(NSString *)fontName rating:(NSNumber *)rating;
 @end

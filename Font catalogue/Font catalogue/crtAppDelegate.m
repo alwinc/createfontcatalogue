@@ -7,18 +7,31 @@
 //
 
 #import "crtAppDelegate.h"
+#import "crtFontListTableViewController.h"
 
 @implementation crtAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize topNavigationController = _topNavigationController;
+@synthesize tableController = _tableController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    #ifdef DEBUG
+      [self.window setBackgroundColor:[UIColor redColor]];
+    #endif
+  
+    self.tableController = [[crtFontListTableViewController alloc] init];
+  
+    self.topNavigationController = [[UINavigationController alloc] initWithRootViewController:self.tableController];
+  
+    [self.window setRootViewController:self.topNavigationController];
+  
     [self.window makeKeyAndVisible];
     return YES;
 }

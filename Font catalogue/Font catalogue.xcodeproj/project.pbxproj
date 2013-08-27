@@ -24,6 +24,9 @@
 		65ABF28917BA6C9500761DF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ABF26817BA6C9400761DF9 /* CoreData.framework */; };
 		65ABF29117BA6C9500761DF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65ABF28F17BA6C9500761DF9 /* InfoPlist.strings */; };
 		65ABF29417BA6C9500761DF9 /* Font_catalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABF29317BA6C9500761DF9 /* Font_catalogueTests.m */; };
+		65ABF2A717BA760700761DF9 /* crtFontListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABF2A617BA760700761DF9 /* crtFontListTableViewController.m */; };
+		65ABF2AA17BA76EB00761DF9 /* crtFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABF2A917BA76EB00761DF9 /* crtFont.m */; };
+		65ABF2FA17BA7F2000761DF9 /* crtFontTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABF2F917BA7F2000761DF9 /* crtFontTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		65ABF29017BA6C9500761DF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65ABF29217BA6C9500761DF9 /* Font_catalogueTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Font_catalogueTests.h; sourceTree = "<group>"; };
 		65ABF29317BA6C9500761DF9 /* Font_catalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Font_catalogueTests.m; sourceTree = "<group>"; };
+		65ABF2A517BA760700761DF9 /* crtFontListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crtFontListTableViewController.h; sourceTree = "<group>"; };
+		65ABF2A617BA760700761DF9 /* crtFontListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crtFontListTableViewController.m; sourceTree = "<group>"; };
+		65ABF2A817BA76EB00761DF9 /* crtFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crtFont.h; sourceTree = "<group>"; };
+		65ABF2A917BA76EB00761DF9 /* crtFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crtFont.m; sourceTree = "<group>"; };
+		65ABF2F817BA7F2000761DF9 /* crtFontTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crtFontTableViewCell.h; sourceTree = "<group>"; };
+		65ABF2F917BA7F2000761DF9 /* crtFontTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crtFontTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,12 @@
 				65ABF27417BA6C9400761DF9 /* crtAppDelegate.m */,
 				65ABF27C17BA6C9400761DF9 /* Font_catalogue.xcdatamodeld */,
 				65ABF26B17BA6C9400761DF9 /* Supporting Files */,
+				65ABF2A517BA760700761DF9 /* crtFontListTableViewController.h */,
+				65ABF2A617BA760700761DF9 /* crtFontListTableViewController.m */,
+				65ABF2A817BA76EB00761DF9 /* crtFont.h */,
+				65ABF2A917BA76EB00761DF9 /* crtFont.m */,
+				65ABF2F817BA7F2000761DF9 /* crtFontTableViewCell.h */,
+				65ABF2F917BA7F2000761DF9 /* crtFontTableViewCell.m */,
 			);
 			path = "Font catalogue";
 			sourceTree = "<group>";
@@ -274,6 +289,9 @@
 				65ABF27117BA6C9400761DF9 /* main.m in Sources */,
 				65ABF27517BA6C9400761DF9 /* crtAppDelegate.m in Sources */,
 				65ABF27E17BA6C9400761DF9 /* Font_catalogue.xcdatamodeld in Sources */,
+				65ABF2A717BA760700761DF9 /* crtFontListTableViewController.m in Sources */,
+				65ABF2AA17BA76EB00761DF9 /* crtFont.m in Sources */,
+				65ABF2FA17BA7F2000761DF9 /* crtFontTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +388,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Font catalogue/Font catalogue-Prefix.pch";
 				INFOPLIST_FILE = "Font catalogue/Font catalogue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -381,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Font catalogue/Font catalogue-Prefix.pch";
 				INFOPLIST_FILE = "Font catalogue/Font catalogue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
